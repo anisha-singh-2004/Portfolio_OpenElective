@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile">Profile</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contacts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contact">Social Media Profiles</a></li>
+                  <li><a class="dropdown-item" href="email_phone_number">Email and Phone Number</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="resume">Resume</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <form class="container" action="/submit" method="POST">
+        <div class="mb-3">
+          <label for="placeVisited" class="form-label">Name of Place Visited</label>
+          <input type="text" class="form-control" id="placeVisited" name="placeVisited" aria-describedby="placeVisitedHelp">
+        </div>
+        <div class="mb-3">
+          <label for="duration" class="form-label">Duration of Trip</label>
+          <input type="text" class="form-control" id="duration" name="duration">
+        </div>
+        <div class="mb-3">
+          <label for="purpose" class="form-label">Purpose of Trip</label>
+          <input type="text" class="form-control" id="purpose" name="purpose">
+        </div>
+        <div class="mb-3">
+          <label for="travelExpenses" class="form-label">Expenditure of Travel</label>
+          <input type="text" class="form-control" id="travelExpenses" name="travelExpenses">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
