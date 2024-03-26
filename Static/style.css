@@ -1,0 +1,80 @@
+.background {
+    background-image: url('images/bg.avif'); 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh; 
+    text-align: center; /* Added from the second definition */
+    border: 2px solid black; /* Added from the second definition */
+}
+
+  
+  .animated-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    animation: fadeInOut 4s ease infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+  .navbar {
+    z-index: 1; 
+  }
+  .container1 {
+    text-align: left;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+
+.contact-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.site-links {
+    margin-top: 20px;
+}
+
+.site-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.site-links a:hover {
+    color: #000;
+}
+
+
+
+.profile-image {
+    width: 400px; 
+    height: auto; 
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid black;
+}
+
