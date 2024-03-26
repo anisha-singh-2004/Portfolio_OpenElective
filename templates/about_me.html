@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_me">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact">Social Media Profiles</a></li>
+                                <li><a class="dropdown-item" href="email_phone_number">Email and Phone Number</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Visit Me At</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='images/profile_picture.jpg') }}" alt="Anisha Singh" class="profile-image">
+            </div>
+            <div class="col-md-8">
+                <div class="content">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, id voluptatum. A quidem velit repellendus ad corrupti assumenda accusantium, laboriosam saepe iusto est. Non ipsa similique dolorem officiis quod fuga.</p>
+                    <p>Repudiandae hic quisquam non illum delectus repellendus debitis ut! Cumque omnis magnam blanditiis natus, facilis dicta voluptatum recusandae quam alias incidunt, reiciendis nihil quis tenetur! Quia libero eos maiores amet.</p>
+                    <p>Neque fugiat eum veniam illum nemo iusto mollitia natus corporis quisquam? Ducimus laboriosam voluptatibus aperiam veniam excepturi et mollitia incidunt facere. Similique ullam minus, laboriosam voluptatem quas commodi temporibus quae.</p>
+                    <p>Dolorem unde nesciunt eveniet est saepe esse architecto voluptatum commodi explicabo distinctio quae, repellat natus. Tempora, totam illo sequi nulla dignissimos dolor sit ad sapiente! Numquam deleniti esse praesentium corporis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='images/project.jpg') }}" class="card-img-top" alt="projects">
+            <div class="card-body">
+                <h5 class="card-title">My Projects</h5>
+                <p class="card-text">List Of Projects I have Made</p>
+                <a href="{{ url_for('project') }}" class="btn btn-primary">-></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
